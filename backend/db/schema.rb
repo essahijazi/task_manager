@@ -13,6 +13,8 @@
 ActiveRecord::Schema.define(version: 2018_09_03_135128) do
 
   create_table "assignments", force: :cascade do |t|
+    t.integer "task_id"
+    t.integer "employee_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
