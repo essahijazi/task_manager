@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_03_135128) do
+ActiveRecord::Schema.define(version: 2018_09_08_190136) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer "task_id"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2018_09_03_135128) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "isAdmin"
   end
 
 end

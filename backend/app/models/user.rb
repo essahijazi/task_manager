@@ -9,6 +9,10 @@ class User < ApplicationRecord
 
     #validations
     validates :username, presence: true, uniqueness: {case_sensitive: false} 
+    validates_presence_of :first_name, :last_name, :password_digest
     
     has_secure_password
+
+
+
 end
